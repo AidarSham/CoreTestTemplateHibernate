@@ -9,6 +9,9 @@ public class Main {
         userDaoJDBC.dropUsersTable();
         userDaoJDBC.createUsersTable();
         userDaoJDBC.saveUser("Michael", "Jackson", (byte) 51);
+        userDaoJDBC.saveUser("Warren", "Buffet", (byte) 91);
+        userDaoJDBC.saveUser("Bill", "Gates", (byte) 66);
+        userDaoJDBC.saveUser("Winston", "Churchill", (byte) 91);
         userDaoJDBC.removeUserById(2);
         userDaoJDBC.getAllUsers();
         userDaoJDBC.cleanUsersTable();
